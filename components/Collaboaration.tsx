@@ -1,5 +1,4 @@
 import {poppinsExtraBold, poppinsSemiBold} from "@/helpers/exportFonts";
-import netflix from "@/assets/images/netflix-Logo.jpeg";
 import radiantImage from "@/assets/images/radiant.png";
 import techClub from "@/assets/images/techClub.jpeg";
 import Image from "next/image";

@@ -23,6 +23,25 @@ export default  function Work() {
                         <div className={`flex flex-col gap-3`}>
                             <div className="flex flex-col gap-3">
                                 <Image
+                                    src={humanResources}
+                                    alt="Person's Image"
+                                    className={`w-full h-80`}
+                                />
+                                <div className={`text-sm italic`}>November 24, 2019</div>
+                            </div>
+                            <div className={`flex flex-col gap-3`}>
+                                <h2 className={`${poppinsSemiBold.className}`}>Atlas Labs Human Resources Analytics</h2>
+                                <p>
+                                    In this project, I analyzed the Human resources data of Atlas Labs exploring the
+                                    attrition rate and behaviours of the employees to the HR Manager who has asked the
+                                    business questions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className={`flex flex-col gap-3`}>
+                            <div className="flex flex-col gap-3">
+                                <Image
                                     src={netflix}
                                     alt="Person's Image"
                                     className={`w-full h-80`}
@@ -62,25 +81,6 @@ export default  function Work() {
                         <div className={`flex flex-col gap-3`}>
                             <div className="flex flex-col gap-3">
                                 <Image
-                                    src={humanResources}
-                                    alt="Person's Image"
-                                    className={`w-full h-80`}
-                                />
-                                <div className={`text-sm italic`}>November 24, 2019</div>
-                            </div>
-                            <div className={`flex flex-col gap-3`}>
-                                <h2 className={`${poppinsSemiBold.className}`}>Atlas Labs Human Resources Analytics</h2>
-                                <p>
-                                    In this project, I analyzed the Human resources data of Atlas Labs exploring the
-                                    attrition rate and behaviours of the employees to the HR Manager who has asked the
-                                    business questions.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className={`flex flex-col gap-3`}>
-                            <div className="flex flex-col gap-3">
-                                <Image
                                     src={rfm}
                                     alt="Person's Image"
                                     className={`w-full h-80`}
@@ -90,7 +90,8 @@ export default  function Work() {
                             <div className={`flex flex-col gap-3`}>
                                 <h2 className={`${poppinsSemiBold.className}`}>RFM Segmentation</h2>
                                 <p>
-                                    The idea of Recency, Frequency and Monetary is used in identifying the buying behaviors of customers and then segmenting customers based on their RFM scores.
+                                    The idea of Recency, Frequency and Monetary is used in identifying the buying
+                                    behaviors of customers and then segmenting customers based on their RFM scores.
                                 </p>
                             </div>
                         </div>
