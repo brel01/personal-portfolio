@@ -7,11 +7,7 @@ export default  function About() {
             <h1 className={`text-4xl font-extrabold text-primary_yellow leading-[116px] lg:text-5xl ${poppinsExtraBold.className}`}>about.</h1>
             <div>
                 <p className="text-md leading-[34px]">
-                    {`Kanyinsola Diyan is a data analyst committed to driving informed decision-making and strategic initiatives through data-driven insights.
-                    With a strong foundation in analytics, she aspires to become a thought leader in the technology industry, pushing the boundaries of her field and making a global impact.
-                    Passionate about empowering others, Kanyinsola actively mentors individuals seeking to establish careers in tech. Her vision extends beyond personal success;
-                    she aims to shape industry cultures and inspire others, positioning herself as a rising force in the global technology landscape.
-                    Kanyinsola's professional journey is driven by purpose, combining technical expertise with a commitment to fostering growth and innovation in the tech sector.`}
+                    {`I am a results-driven data analyst with hands-on experience in leveraging data to deliver actionable insights and drive impactful business decisions. With a strong foundation in analytics and a passion for education and mentorship, I bring a unique blend of technical expertise and visionary leadership to every project.`}
                 </p>
             </div>
 
@@ -20,23 +16,31 @@ export default  function About() {
                     <div className="flex flex-col my-8 gap-5">
                         <div className={`flex items-center gap-3`}>
                             <div className="w-[10px] h-[10px] bg-dark_blue rounded-full"></div>
-                            <div className={`${poppinsSemiBold.className}`}>2018-2020</div>
+                            <div className={`${poppinsSemiBold.className}`}> In my data analytics career, I have</div>
                         </div>
                         <div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
-                            phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum
-                            diam.
+                            Analyzed and visualized datasets to support key business objectives.<br/>
+                            Built dashboards and analytics models to streamline decision-making processes.<br/>
+                            Led projects in funnel analysis, customer cohort tracking, and A/B testing to enhance performance metrics.
                         </div>
                     </div>
                     <div className="flex flex-col my-8 gap-5">
                         <div className={`flex items-center gap-3`}>
                             <div className="w-[10px] h-[10px] bg-dark_blue rounded-full"></div>
-                            <div className={`${poppinsSemiBold.className}`}>2018-2020</div>
+                            <div className={`${poppinsSemiBold.className}`}>Career Guidance & Personal Branding</div>
                         </div>
                         <div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
-                            phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum
-                            diam.
+                            I help students and early-career professionals gain clarity in their career paths, inspired by my own journey from a new graduate to a thriving data analyst.<br/>
+                            I share insights on analytics trends, tools, and strategies to educate and inspire the next wave of data enthusiasts.
+                        </div>
+                    </div>
+                    <div className="flex flex-col my-8 gap-5">
+                        <div className={`flex items-center gap-3`}>
+                            <div className="w-[10px] h-[10px] bg-dark_blue rounded-full"></div>
+                            <div className={`${poppinsSemiBold.className}`}>My vision</div>
+                        </div>
+                        <div>
+                            My vision is to bridge the gap between data, education, and empowerment. If you’re an analytics enthusiast, educator, or aspiring professional looking to connect, let’s collaborate to create lasting impact!
                         </div>
                     </div>
                 </div>

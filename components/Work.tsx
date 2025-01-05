@@ -29,7 +29,7 @@ export default  function Work() {
                                     alt="Person's Image"
                                     className={`w-full h-80`}
                                 />
-                                <div className={`text-sm italic`}>November 24, 2019</div>
+                                <div className={`text-sm italic`}>BigQuery and Microsoft Power BI</div>
                             </div>
                             <div className={`flex flex-col gap-3`}>
                                 <h2 className={`${poppinsSemiBold.className}`}>Atlas Labs Human Resources Analytics</h2>
@@ -50,14 +50,12 @@ export default  function Work() {
                                     alt="Person's Image"
                                     className={`w-full h-80`}
                                 />
-                                <div className={`text-sm italic`}>November 24, 2019</div>
+                                <div className={`text-sm italic`}>Microsoft Power BI</div>
                             </div>
                             <div className={`flex flex-col gap-3`}>
                                 <h2 className={`${poppinsSemiBold.className}`}>Netflix Content Analytics</h2>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed aliquam sollicitudin
-                                    rhoncus morbi. Tincidunt quam sem elit a convallis. Eget ipsum, velit vitae eu nunc,
-                                    consequat, at.
+                                    In this project, I analyzed the Netflix dataset I got on Kaggle and designed the dashboard to look like a Netflix desktop page prototype. The analysis was communicated with the brand colours of Netflix.
                                 </p>
                             </div>
                         </motion.div>
@@ -70,7 +68,7 @@ export default  function Work() {
                                     alt="Person's Image"
                                     className={`w-full h-80`}
                                 />
-                                <div className={`text-sm italic`}>November 24, 2019</div>
+                                <div className={`text-sm italic`}>BigQuery and Microsoft Power BI</div>
                             </div>
                             <div className={`flex flex-col gap-3`}>
                                 <h2 className={`${poppinsSemiBold.className}`}>AdventureWorks Executive Summary</h2>
@@ -91,7 +89,7 @@ export default  function Work() {
                                     alt="Person's Image"
                                     className={`w-full h-80`}
                                 />
-                                <div className={`text-sm italic`}>November 24, 2019</div>
+                                <div className={`text-sm italic`}>BigQuery and Microsoft Power BI</div>
                             </div>
                             <div className={`flex flex-col gap-3`}>
                                 <h2 className={`${poppinsSemiBold.className}`}>RFM Segmentation</h2>
