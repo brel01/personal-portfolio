@@ -1,13 +1,13 @@
 
 import styles from '@/styles/header.module.css';
 import Image from "next/image";
-import hero from '@/assets/images/hero.jpg';
+import profileImage from '@/assets/images/profile.jpg';
 
 const CurvyCircle = () => {
     return (
         <div className={`relative`}>
             <Image
-                src={hero}
+                src={profileImage}
                 alt="Person's Image"
                 className={styles.tiltedCircle}
             />
