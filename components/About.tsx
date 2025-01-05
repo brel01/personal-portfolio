@@ -3,8 +3,8 @@ import {poppinsExtraBold, poppinsSemiBold} from "@/helpers/exportFonts";
 export default  function About() {
 
     return (
-        <div className="">
-            <h1 className={`text-[60px] font-extrabold text-primary_yellow leading-[116px] ${poppinsExtraBold.className}`}>about.</h1>
+        <section id={"about "} className="w-full max-w-sm lg:max-w-screen-lg">
+            <h1 className={`text-4xl font-extrabold text-primary_yellow leading-[116px] lg:text-5xl ${poppinsExtraBold.className}`}>about.</h1>
             <div>
                 <p className="text-md leading-[34px]">
                     {`Kanyinsola Diyan is a data analyst committed to driving informed decision-making and strategic initiatives through data-driven insights.
@@ -41,6 +41,6 @@ export default  function About() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

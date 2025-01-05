@@ -9,8 +9,8 @@ import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
-   <div className="space-y-5 px-6 py-6 flex flex-col items-center gap-16">
-       <div  className=" max-w-screen-lg space-y-[90px]">
+   <div className="space-y-5 px-6 py-6 flex flex-col items-center gap-16 w-full text-sm">
+       <div  className="w-full flex flex-col items-center lg:max-w-screen-lg space-y-[90px]">
            <Navbar />
            <Header />
            <About />
