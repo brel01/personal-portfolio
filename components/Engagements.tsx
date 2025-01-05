@@ -13,8 +13,8 @@ import Image from "next/image";
 export default  function Engagements() {
 
     return (
-        <div className={``}>
-            <h1 className={`text-[60px] font-extrabold text-primary_yellow leading-[116px] ${poppinsExtraBold.className}`}>engagements.</h1>
+        <div className={`max-w-sm lg:max-w-screen-lg`}>
+            <h1 className={`text-4xl font-extrabold text-primary_yellow leading-[116px] lg:text-5xl ${poppinsExtraBold.className}`}>engagements.</h1>
             <div className={`flex flex-col`}>
                 <div>
                     <p className="text-md leading-[34px]">
@@ -23,7 +23,7 @@ export default  function Engagements() {
                     </p>
                 </div>
 
-                <div className={`flex mt-20`}>
+                <div className={`flex mt-10`}>
                     <Carousel className="w-full">
                         <CarouselContent className="-ml-1">
                             {Array.from({ length: 5 }).map((_, index) => (
