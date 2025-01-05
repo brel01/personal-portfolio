@@ -1,7 +1,7 @@
 'use client'
 import { useState, useRef, useEffect } from "react";
 import { poppinsSemiBold } from "@/helpers/exportFonts";
-import {Facebook, InstagramIcon, Linkedin, Menu, TwitterIcon, X, XIcon} from "lucide-react";
+import {Facebook, InstagramIcon, Linkedin, Menu, TwitterIcon, X} from "lucide-react";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
