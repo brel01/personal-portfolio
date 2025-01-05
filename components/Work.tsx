@@ -1,3 +1,4 @@
+import * as motion from "motion/react-client"
 import {poppinsExtraBold, poppinsSemiBold} from "@/helpers/exportFonts";
 import netflix from "@/assets/images/netflix-Logo.jpeg";
 import executiveSummaryImage from "@/assets/images/executive-summary.webp";
@@ -8,7 +9,7 @@ import Image from "next/image";
 export default  function Work() {
 
     return (
-        <section id="work" className={`max-w-sm lg:max-w-screen-lg`}>
+        <div className={`max-w-sm lg:max-w-screen-lg`}>
             <h1 className={`text-4xl font-extrabold text-primary_yellow leading-[116px] lg:text-5xl ${poppinsExtraBold.className}`}>projects.</h1>
             <div className={`flex flex-col`}>
                 <div>
@@ -18,9 +19,10 @@ export default  function Work() {
                     </p>
                 </div>
 
-                <div className={`flex mt-20`}>
+                <div className={`flex mt-10`}>
                     <div className="grid grid-cols-1 gap-20 w-full lg:grid-cols-2">
-                        <div className={`flex flex-col gap-3`}>
+                        <motion.div   whileHover={{ scale: 1.1 }}
+                                      whileTap={{ scale: 0.95 }} className={`flex flex-col gap-3`}>
                             <div className="flex flex-col gap-3">
                                 <Image
                                     src={humanResources}
@@ -37,9 +39,11 @@ export default  function Work() {
                                     business questions.
                                 </p>
                             </div>
-                        </div>
 
-                        <div className={`flex flex-col gap-3`}>
+                        </motion.div>
+
+                        <motion.div   whileHover={{ scale: 1.1 }}
+                                      whileTap={{ scale: 0.95 }}  className={`flex flex-col gap-3`}>
                             <div className="flex flex-col gap-3">
                                 <Image
                                     src={netflix}
@@ -56,9 +60,10 @@ export default  function Work() {
                                     consequat, at.
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <div className={`flex flex-col gap-3`}>
+                        <motion.div   whileHover={{ scale: 1.1 }}
+                                      whileTap={{ scale: 0.95 }} className={`flex flex-col gap-3`}>
                             <div className="flex flex-col gap-3">
                                 <Image
                                     src={executiveSummaryImage}
@@ -76,9 +81,10 @@ export default  function Work() {
                                     of the employees and scale the business through human capital.
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <div className={`flex flex-col gap-3`}>
+                        <motion.div   whileHover={{ scale: 1.1 }}
+                                      whileTap={{ scale: 0.95 }} className={`flex flex-col gap-3`}>
                             <div className="flex flex-col gap-3">
                                 <Image
                                     src={rfm}
@@ -94,10 +100,10 @@ export default  function Work() {
                                     behaviors of customers and then segmenting customers based on their RFM scores.
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }

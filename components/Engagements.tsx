@@ -23,7 +23,7 @@ export default  function Engagements() {
                     </p>
                 </div>
 
-                <div className={`flex mt-20`}>
+                <div className={`flex mt-10`}>
                     <Carousel className="w-full">
                         <CarouselContent className="-ml-1">
                             {Array.from({ length: 5 }).map((_, index) => (

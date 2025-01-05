@@ -26,7 +26,7 @@ export default function Navbar() {
     }, []);
 
     return (
-        <nav className="w-full px-4 py-3">
+        <nav className="w-full px-0 py-3">
             <div className="flex items-center justify-between">
                 {/* Logo or Title */}
                 <div className={`font-bold text-lg ${poppinsSemiBold.className}`}>

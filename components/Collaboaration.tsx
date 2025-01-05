@@ -10,13 +10,13 @@ export default  function Collaboaration() {
             <h1 className={`text-4xl font-extrabold text-primary_yellow leading-[116px] lg:text-5xl ${poppinsExtraBold.className}`}>collaborations.</h1>
             <div className={`flex flex-col`}>
                 <div>
-                    {/*<p className="text-md leading-[34px]">*/}
-                    {/*    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id*/}
-                    {/*    phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.*/}
-                    {/*</p>*/}
+                    <p className="text-md leading-[34px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
+                        phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
+                    </p>
                 </div>
 
-                <div className={`flex`}>
+                <div className={`flex mt-10`}>
                     <div className="grid grid-cols-1 gap-20 w-full lg:grid-cols-2">
                         <div className={`flex flex-col gap-3`}>
                             <div className="flex flex-col gap-3">
