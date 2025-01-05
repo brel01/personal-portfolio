@@ -7,11 +7,12 @@ export default  function About() {
             <h1 className={`text-[60px] font-extrabold text-primary_yellow leading-[116px] ${poppinsExtraBold.className}`}>about.</h1>
             <div>
                 <p className="text-md leading-[34px]">
-                    Kanyinsola Diyan is a data analyst committed to driving informed decision-making and strategic initiatives through data-driven insights.
+                    {`Kanyinsola Diyan is a data analyst committed to driving informed decision-making and strategic initiatives through data-driven insights.
                     With a strong foundation in analytics, she aspires to become a thought leader in the technology industry, pushing the boundaries of her field and making a global impact.
                     Passionate about empowering others, Kanyinsola actively mentors individuals seeking to establish careers in tech. Her vision extends beyond personal success;
                     she aims to shape industry cultures and inspire others, positioning herself as a rising force in the global technology landscape.
-                    Kanyinsola's professional journey is driven by purpose, combining technical expertise with a commitment to fostering growth and innovation in the tech sector.</p>
+                    Kanyinsola's professional journey is driven by purpose, combining technical expertise with a commitment to fostering growth and innovation in the tech sector.`}
+                </p>
             </div>
 
             <div className={`flex justify-end`}>
