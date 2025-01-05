@@ -1,9 +1,11 @@
 import {poppinsExtraBold} from "@/helpers/exportFonts";
-
+import contactUs from "@/assets/images/contactUs.png";
+import Image from "next/image";
 
 export default  function Contact() {
 
     return (
+        <section>
         <div className={``}>
             <h1 className={`text-[60px] font-extrabold text-primary_yellow leading-[116px] ${poppinsExtraBold.className}`}>Contact.</h1>
             <div className={`flex flex-col`}>
@@ -14,10 +16,26 @@ export default  function Contact() {
                     </p>
                 </div>
 
-                <div className={`flex mt-20`}>
-
+                <div className={`flex flex-col mt-20 gap-3 md:flex-row`}>
+                    <div className={`w-1/3`}>
+                        <Image
+                            src={contactUs}
+                            alt="Person's Image"
+                            className={`w-full h-80`}
+                        />
+                    </div>
+                    <div className={`w-2/3`}>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam
+                            felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque,
+                            proin bibendum diam.
+                        </div>
+                        <div>johndoe@mail.com</div>
+                        <div>twitter.com/johndoe</div>
+                        <div>behance.com/johndoe</div>
+                    </div>
                 </div>
             </div>
         </div>
+        </section>
     )
 }
