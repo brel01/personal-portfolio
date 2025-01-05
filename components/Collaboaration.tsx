@@ -27,7 +27,7 @@ export default  function Collaboaration() {
                                 />
                             </div>
                             <div className={`flex flex-col gap-3`}>
-                                <h2 className={`${poppinsSemiBold.className}`}>Foundation and Employability Bootcamp 2.0 with Radiant Pathways Progressive Initiative</h2>
+                                <h2 className={`${poppinsSemiBold.className}`}>Tech Foundation and Employability Bootcamp 2.0 with Radiant Pathways Progressive Initiative</h2>
                             </div>
                         </div>
 

@@ -15,10 +15,10 @@ export default function Home() {
 
            <Navbar/>
            <Header/>
-           <section id={"about"} ><About/></section>
-           <section id="work"><Work/></section>
+           <section id={`about`} ><About/></section>
+           <section id={`projects`}><Work/></section>
            <section id={`engagements`}><Engagements/></section>
-           <section id={`collaboaration`}><Collaboaration/></section>
+           <section id={`collaborations`}><Collaboaration/></section>
            <section id={`contact`}><Contact/></section>
            <section><Footer /></section>
        </div>

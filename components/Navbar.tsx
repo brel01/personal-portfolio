@@ -30,16 +30,19 @@ export default function Navbar() {
             <div className="flex items-center justify-between">
                 {/* Logo or Title */}
                 <div className={`font-bold text-lg ${poppinsSemiBold.className}`}>
-                    Kanyinsola Diyan
+                    The Kanyinsola Diyan
                 </div>
 
                 {/* Desktop Navbar */}
                 <div className="hidden items-center justify-between gap-5 md:flex">
-                    <div>Home</div>
-                    <div>About</div>
-                    <div>Work</div>
+                    <a href={`./`} className={`cursor-pointer hover:underline`}>Home</a>
+                    <a href={`#about`} className={`cursor-pointer hover:underline`}>About</a>
+                    <a href={`#projects`} className={`cursor-pointer hover:underline`}>Projects</a>
+                    <a href={`#engagements`} className={`cursor-pointer hover:underline`}>Engagements</a>
+                    <a href={`#collaborations`} className={`cursor-pointer hover:underline`}>Collaborations</a>
+                    <a href={`#contact`} className={`cursor-pointer hover:underline`}>Contact</a>
                 </div>
-                <div className="hidden md:flex">Twitter</div>
+
 
                 {/* Hamburger Menu for Mobile */}
                 <button
@@ -58,8 +61,19 @@ export default function Navbar() {
                     ref={menuRef} // Attach ref to the dropdown container
                     className="flex flex-col gap-3 mt-3 md:hidden"
                 >
-                    <a href="#about" className={`border-b-[1px] border-b-[#474306] border-dashed py-2 cursor-pointer`}>About</a>
-                    <a href="#work" className={`border-b-[1px] border-b-[#474306] border-dashed py-2 cursor-pointer`}>Work</a>
+                    <a href={`./`}
+                       className={`border-b-[1px] border-b-[#474306] border-dashed py-2 cursor-pointer`} onClick={() => {setIsMenuOpen(false)}}>Home</a>
+                    <a href={`#about`}
+                       className={`border-b-[1px] border-b-[#474306] border-dashed py-2 cursor-pointer`} onClick={() => {setIsMenuOpen(false)}}>About</a>
+                    <a href={`#projects`}
+                       className={`border-b-[1px] border-b-[#474306] border-dashed py-2 cursor-pointer`} onClick={() => {setIsMenuOpen(false)}}>Projects</a>
+                    <a href={`#engagements`}
+                       className={`border-b-[1px] border-b-[#474306] border-dashed py-2 cursor-pointer`} onClick={() => {setIsMenuOpen(false)}}>Engagements</a>
+                    <a href={`#collaborations`}
+                       className={`border-b-[1px] border-b-[#474306] border-dashed py-2 cursor-pointer`} onClick={() => {setIsMenuOpen(false)}}>Collaborations</a>
+                    <a href={`#contact`}
+                       className={`border-b-[1px] border-b-[#474306] border-dashed py-2 cursor-pointer`} onClick={() => {setIsMenuOpen(false)}}>Contact</a>
+
                     <div className={`flex gap-3 my-2`}>
                         <a href={'#'} target={'_blank'}> <TwitterIcon/></a>
                         <a href={'#'} target={'_blank'}><Linkedin/></a>
@@ -67,7 +81,7 @@ export default function Navbar() {
                         <a href={'#'} target={'_blank'}> <Facebook/></a>
                     </div>
                 </div>
-                )}
+            )}
         </nav>
     );
 }
