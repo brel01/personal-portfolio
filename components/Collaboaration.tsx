@@ -21,7 +21,8 @@ export default  function Collaboaration() {
 
                 <div className={`flex mt-10`}>
                     <div className="grid grid-cols-1 gap-20 w-full lg:grid-cols-2">
-                        <div className={`flex flex-col gap-3`}>
+                        <motion.div  whileHover={{scale: 1.1}}
+                                     whileTap={{scale: 0.95}}  className={`flex flex-col gap-3`}>
                             <div className="flex flex-col gap-3">
                                 <Image
                                     src={radiantImage}
@@ -32,9 +33,10 @@ export default  function Collaboaration() {
                             <div className={`flex flex-col gap-3`}>
                                 <h2 className={`${poppinsSemiBold.className}`}>Tech Foundation and Employability Bootcamp 2.0 with Radiant Pathways Progressive Initiative</h2>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <div className={`flex flex-col gap-3`}>
+                        <motion.div  whileHover={{scale: 1.1}}
+                                     whileTap={{scale: 0.95}} className={`flex flex-col gap-3`}>
                             <div className="flex flex-col gap-3">
                                 <Image
                                     src={techClub}
@@ -45,7 +47,7 @@ export default  function Collaboaration() {
                             <div className={`flex flex-col gap-3`}>
                                 <h2 className={`${poppinsSemiBold.className}`}>Tech Girls Club</h2>
                             </div>
-                        </div>
+                        </motion.div>
 
                     </div>
                 </div>
