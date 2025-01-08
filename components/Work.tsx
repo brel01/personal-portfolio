@@ -16,6 +16,8 @@ import {
 } from "@/components/ui/dialog"
 import {useState} from "react";
 import PDFEmbed from "@/components/PDFEmbed";
+import styles from "@/styles/header.module.css";
+import {Eye} from "lucide-react";
 
 
 
@@ -52,7 +54,7 @@ export default  function Work() {
                 </div>
 
                 <div className="flex mt-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 w-full cursor-pointer"
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 w-full"
                     >
                         {[
                             {
@@ -90,10 +92,9 @@ export default  function Work() {
                         ].map((item, index) => (
                             <motion.div
                                 key={index}
-                                whileHover={{scale: 1.1}}
-                                whileTap={{scale: 0.95}}
+                                // whileHover={{scale: 1.1}}
+                                // whileTap={{scale: 0.95}}
                                 className="flex flex-col gap-3"
-                                onClick={() => {onDisplayPdf(item?.title, item?.pdfLink)}}
                             >
                                 <div className="flex flex-col gap-3">
                                     <Image
@@ -107,6 +108,17 @@ export default  function Work() {
                                     <h2 className={poppinsSemiBold.className}>{item.title}</h2>
                                     <p>{item.description}</p>
                                 </div>
+                                <div className="relative rounded-md w-fit">
+                                    <div
+                                        className={`flex items-center justify-center gap-1 text-center py-2 text-gray-800 font-medium bg-primary_yellow cursor-pointer ${styles.resumeButton}`}>
+                                        <div className={`flex gap-2 items-center justify-center`}>View <Eye width={18} height={18} /></div>
+                                    </div>
+                                    <div className={`${styles.resumeButtonBorder} ${styles.resumeButton} cursor-pointer`}
+                                         onClick={() => {
+                                            onDisplayPdf(item?.title, item?.pdfLink)
+                                         }}
+                                    ></div>
+                                </div>
                             </motion.div>
                         ))}
                     </div>
@@ -115,10 +127,9 @@ export default  function Work() {
             </div>
 
             <Dialog open={showPdf} onOpenChange={toggleShowPDF}>
-                <DialogTrigger>Open</DialogTrigger>
                 <DialogContent className={`bg-amber-50 w-full lg:max-w-screen-lg overflow-auto`}>
                     <DialogHeader>
-                        <DialogTitle>{pdfTitle}</DialogTitle>
+                    <DialogTitle>{pdfTitle}</DialogTitle>
                         <DialogDescription>
                             {/*<PDFEmbed pdfUrl="/pdf/RFM.pdf" />*/}
                         </DialogDescription>
