@@ -29,6 +29,7 @@ export default  function Collaboaration() {
                                     alt="Person's Image"
                                     className={`w-full h-80`}
                                 />
+                                <div className="text-sm italic">{`July 6, 2024`}</div>
                             </div>
 
                             <div className="flex flex-col gap-3">
@@ -40,12 +41,14 @@ export default  function Collaboaration() {
                         <motion.div whileHover={{scale: 1.1}}
                                     whileTap={{scale: 0.95}} className={`flex flex-col gap-3`}>
                             <div className="flex flex-col gap-3">
-                            <Image
+                                <Image
                                     src={techClub}
                                     alt="Person's Image"
                                     className={`w-full h-80`}
                                 />
+                                <div className="text-sm italic">{`July 6, 2024`}</div>
                             </div>
+
                             <div className={`flex flex-col gap-3`}>
                                 <h2 className={`${poppinsSemiBold.className}`}>{"Tech Girls' Club"}</h2>
                                 <p className={`leading-5`}>{`I collaborated with Tech Girls' Club to empower senior secondary school students with foundational data analytics skills. Through interactive sessions, I taught them how to collect and organize data using Microsoft Excel, analyze it effectively, and create dashboards to present insights. These dashboards were designed to support decision-making by stakeholders, fostering a practical understanding of data analytics and its real-world applications. This partnership highlights my dedication to nurturing the next generation of tech-savvy leaders.`}</p>

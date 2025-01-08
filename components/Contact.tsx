@@ -1,7 +1,7 @@
 import {poppinsExtraBold} from "@/helpers/exportFonts";
 import contactUs from "@/assets/images/contactUs.png";
 import Image from "next/image";
-import {Facebook, Github, Linkedin, Mail} from "lucide-react";
+import {Github, Linkedin, Mail} from "lucide-react";
 
 export default  function Contact() {
 
@@ -36,10 +36,6 @@ Reach out through the social media platforms below or via email, and I'll get ba
                                rel={`noopener noreferrer`}>
                                 Kanyinsola Diyan
                             </a>
-                        </div>
-                        <div className={`flex gap-3 items-center`}>
-                        <Facebook/>
-                            <div>johndoe@mail.com</div>
                         </div>
                         <div className={`flex gap-3 items-center`}>
                             <Github />
