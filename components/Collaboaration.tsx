@@ -11,8 +11,7 @@ export default  function Collaboaration() {
             <div className={`flex flex-col`}>
                 <div>
                     <p className="text-md leading-[34px]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
-                        phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
+                        I have partnered with organizations to facilitate impactful workshops and training sessions, empowering participants with in-demand data analytics skills. Through hands-on learning and practical insights, these collaborations aim to bridge the gap between knowledge and real-world application, fostering growth and success in the tech space.
                     </p>
                 </div>
 
