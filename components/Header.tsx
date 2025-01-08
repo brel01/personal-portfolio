@@ -14,7 +14,7 @@ export default  function Header() {
                     <div className={`text-lg lg:text-lg`}>Global talent</div>
                 </div>
                 <div className="relative rounded-md w-fit">
-                    <div className={`text-center py-2 text-gray-800 font-medium bg-primary_yellow ${styles.resumeButton}`}>
+                    <div className={`text-center py-2 text-gray-800 font-medium bg-primary_yellow cursor-pointer ${styles.resumeButton}`}>
                         Resume
                     </div>
                     <div className={`${styles.resumeButtonBorder} ${styles.resumeButton}`}></div>
