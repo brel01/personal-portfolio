@@ -15,7 +15,7 @@ export default function Footer() {
                 </p>
                 <p className="text-xs">
                     Designed and developed in {developedYear}.
-                </p>
+                </p> responsiveness
             </div>
         </footer>
     );

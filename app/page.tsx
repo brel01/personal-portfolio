@@ -8,7 +8,7 @@ import Work from "@/components/Work";
 import Collaboaration from "@/components/Collaboaration";
 import Engagements from "@/components/Engagements";
 import Contact from "@/components/Contact";
-import Footer from "@/components/ui/Footer";
+import Footer from "@/components/Footer";
 
 export default function Home() {
     const { ref: aboutRef, inView: aboutInView } = useInView({

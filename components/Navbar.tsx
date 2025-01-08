@@ -29,13 +29,12 @@ export default function Navbar() {
         <nav className="w-full px-0 py-3">
             <div className="flex items-center justify-between">
                 {/* Logo or Title */}
-                <div className={`font-bold text-lg ${poppinsSemiBold.className}`}>
+                <a href={`./`} className={`font-bold text-lg ${poppinsSemiBold.className}`}>
                     The Kanyinsola Diyan
-                </div>
+                </a>
 
                 {/* Desktop Navbar */}
                 <div className="hidden items-center justify-between gap-5 md:flex">
-                    <a href={`./`} className={`cursor-pointer hover:underline`}>Home</a>
                     <a href={`#about`} className={`cursor-pointer hover:underline`}>About</a>
                     <a href={`#projects`} className={`cursor-pointer hover:underline`}>Projects</a>
                     <a href={`#engagements`} className={`cursor-pointer hover:underline`}>Engagements</a>
