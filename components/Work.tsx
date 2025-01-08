@@ -15,30 +15,45 @@ import {
     DialogTrigger,
 } from "@/components/ui/dialog"
 import {useState} from "react";
+import PDFEmbed from "@/components/PDFEmbed";
+
 
 
 export default  function Work() {
 
-    const [showPdf, setShowPdf] = useState(false);
+    const [showPdf, setShowPdf] = useState<boolean>(false);
+    const [pdfTitle, setPdfTitle] = useState<string>("");
+    const [pdfLink, setPdfLink] = useState<string>("");
+
 
     const toggleShowPDF = () => {
         setShowPdf(!showPdf);
+    }
+
+    const onDisplayPdf = (title: string, pdfLink: string) => {
+        setPdfLink(pdfLink);
+        toggleShowPDF();
+        setPdfTitle(title);
     }
 
     return (
         <div className={`max-w-sm lg:max-w-screen-lg`}>
             <h1 className={`text-4xl font-extrabold text-primary_yellow leading-[116px] lg:text-5xl ${poppinsExtraBold.className}`}>projects.</h1>
             <div className={`flex flex-col`}>
-                <div>
+                <div className={`mt-4`}>
                     <p className="text-md leading-[34px]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
-                        phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum
-                        diam.
+                        Explore a collection of my analytics projects, where data meets innovation. Using tools like
+                        SQL, Power BI, Python, and BigQuery, I transform raw data into actionable insights and
+                        interactive dashboards. These works showcase my expertise in solving complex problems,
+                        optimizing processes, and driving informed decision-making.
+
+
                     </p>
                 </div>
 
                 <div className="flex mt-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 w-full cursor-pointer">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 w-full cursor-pointer"
+                    >
                         {[
                             {
                                 src: humanResources,
@@ -46,6 +61,7 @@ export default  function Work() {
                                 title: "Atlas Labs Human Resources Analytics",
                                 description:
                                     "In this project, I analyzed the Human Resources data of Atlas Labs, exploring the attrition rate and employee behaviors to answer the HR Manager's business questions.",
+                                pdfLink: "Atlas-Labs-HR.pdf"
                             },
                             {
                                 src: netflix,
@@ -53,6 +69,7 @@ export default  function Work() {
                                 title: "Netflix Content Analytics",
                                 description:
                                     "In this project, I analyzed the Netflix dataset from Kaggle and designed a dashboard to resemble a Netflix desktop page prototype. The analysis was presented using Netflix's brand colors.",
+                                pdfLink: "Netflix-Pro.pdf"
                             },
                             {
                                 src: executiveSummaryImage,
@@ -60,6 +77,7 @@ export default  function Work() {
                                 title: "AdventureWorks Executive Summary",
                                 description:
                                     "For this project, I provided a business summary for the C-level executives of AdventureWorks, showcasing profitability over three fiscal years. Additional pages were created for the HR Head to explore employee demographics and scale human capital.",
+                                pdfLink: "ADW-Project.pdf"
                             },
                             {
                                 src: rfm,
@@ -67,6 +85,7 @@ export default  function Work() {
                                 title: "RFM Segmentation",
                                 description:
                                     "This project utilized Recency, Frequency, and Monetary (RFM) analysis to identify customer buying behaviors and segment customers based on their RFM scores.",
+                                pdfLink: "RFM.pdf"
                             },
                         ].map((item, index) => (
                             <motion.div
@@ -74,6 +93,7 @@ export default  function Work() {
                                 whileHover={{scale: 1.1}}
                                 whileTap={{scale: 0.95}}
                                 className="flex flex-col gap-3"
+                                onClick={() => {onDisplayPdf(item?.title, item?.pdfLink)}}
                             >
                                 <div className="flex flex-col gap-3">
                                     <Image
@@ -96,14 +116,14 @@ export default  function Work() {
 
             <Dialog open={showPdf} onOpenChange={toggleShowPDF}>
                 <DialogTrigger>Open</DialogTrigger>
-                <DialogContent>
+                <DialogContent className={`bg-amber-50 w-full lg:max-w-screen-lg overflow-auto`}>
                     <DialogHeader>
-                        <DialogTitle>Are you absolutely sure?</DialogTitle>
+                        <DialogTitle>{pdfTitle}</DialogTitle>
                         <DialogDescription>
-                            This action cannot be undone. This will permanently delete your account
-                            and remove your data from our servers.
+                            {/*<PDFEmbed pdfUrl="/pdf/RFM.pdf" />*/}
                         </DialogDescription>
                     </DialogHeader>
+                    <PDFEmbed pdfUrl={`/pdf/${pdfLink}`} />
                 </DialogContent>
             </Dialog>
         </div>

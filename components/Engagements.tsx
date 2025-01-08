@@ -12,7 +12,6 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import Image from "next/image";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
 
 export default  function Engagements() {
 
@@ -20,10 +19,9 @@ export default  function Engagements() {
         <div className={`max-w-sm lg:max-w-screen-lg`}>
             <h1 className={`text-4xl font-extrabold text-primary_yellow leading-[116px] lg:text-5xl ${poppinsExtraBold.className}`}>engagements.</h1>
             <div className={`flex flex-col`}>
-                <div>
+                <div className={`mt-4`}>
                     <p className="text-md leading-[34px]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
-                        phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
+                        Discover my journey as a speaker in the tech community, where I share insights on data analytics, career growth, and empowering the next generation of tech professionals. From workshops to panel discussions, these engagements highlight my passion for knowledge sharing and community building.
                     </p>
                 </div>
 
