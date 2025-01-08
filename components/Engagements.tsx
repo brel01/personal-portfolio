@@ -16,38 +16,41 @@ import Image from "next/image";
 export default  function Engagements() {
 
     return (
-        <div className={`max-w-sm lg:max-w-screen-lg`}>
+        <div className={`max-w-sm lg:max-w-screen-lg px-6`}>
             <h1 className={`text-4xl font-extrabold text-primary_yellow leading-[116px] lg:text-5xl ${poppinsExtraBold.className}`}>engagements.</h1>
             <div className={`flex flex-col`}>
                 <div className={`mt-4`}>
                     <p className="text-md leading-[34px]">
-                        Discover my journey as a speaker in the tech community, where I share insights on data analytics, career growth, and empowering the next generation of tech professionals. From workshops to panel discussions, these engagements highlight my passion for knowledge sharing and community building.
+                        Discover my journey as a speaker in the tech community, where I share insights on data
+                        analytics, career growth, and empowering the next generation of tech professionals. From
+                        workshops to panel discussions, these engagements highlight my passion for knowledge sharing and
+                        community building.
                     </p>
                 </div>
 
 
-                <div className="flex mt-6 ">
-                    <Carousel className="w-full">
+                <div className="flex items-center justify-center mt-6 w-full">
+                    <Carousel className="w-[90%] md:w-full mx-12">
                         <CarouselContent className="-ml-1 gap-6 py-8">
                             {[
                                 {
                                     src: odumareTech,
                                     title: "With OdumareTech",
-                                    date: "November 24, 2019",
+                                    date: "July 6, 2024",
                                     description:
                                         "At OdumareTech, I shared proven strategies with the EdTech community on landing a first role in tech, empowering aspiring professionals to kickstart their careers."
                                 },
                                 {
                                     src: tentacoos,
                                     title: "With Tentacoos",
-                                    date: "November 24, 2019",
+                                    date: "September 28, 2024",
                                     description:
                                         "At Tentacoos, an EdTech startup empowering teenagers with tech skills, I shared my journey into data analytics and emphasized the importance of starting in tech early."
                                 },
                                 {
                                     src: girlsDay,
                                     title: "International Day of the Girl Child with Tech Girls’ Club and IGNOSSA",
-                                    date: "November 24, 2019",
+                                    date: "October 11, 2024",
                                     description:
                                         "At the International Day of the Girl Child celebration in Ibadan, Nigeria, I inspired high school students by highlighting diverse career paths in the digital world. I encouraged the girls to lead Africa’s tech revolution and embrace opportunities to become trailblazers in technology."
                                 }
@@ -73,8 +76,11 @@ export default  function Engagements() {
                                 </CarouselItem>
                             ))}
                         </CarouselContent>
-                        <CarouselPrevious/>
-                        <CarouselNext/>
+                        <div className={``}>
+                            <CarouselPrevious/>
+                            <CarouselNext/>
+                        </div>
+
                     </Carousel>
                 </div>
 

@@ -21,6 +21,11 @@
     right: calc(10% - 20px);
 }
 
+/*.tiltedCircleBorder:hover {*/
+/*    top: calc(6% - 20px);*/
+/*    right: calc(6% - 20px);*/
+/*}*/
+
 /* Responsive adjustments */
 @media (max-width: 640px) {
     .tiltedCircleBorder {

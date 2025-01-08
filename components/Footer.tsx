@@ -11,11 +11,11 @@ export default function Footer() {
                     &copy; {developedYear === currentYear
                     ? currentYear
                     : `${developedYear} - ${currentYear}`}{" "}
-                    LaTunde. All rights reserved.
+                    <a href={`https://github.com/brel01`} target={`_blank`}>LaTunde</a>. All rights reserved.
                 </p>
                 <p className="text-xs">
                     Designed and developed in {developedYear}.
-                </p>
+                </p> responsiveness
             </div>
         </footer>
     );
