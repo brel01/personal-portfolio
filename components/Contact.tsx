@@ -9,7 +9,7 @@ export default  function Contact() {
         <section>
         <div className={`max-w-sm lg:max-w-screen-lg`}>
             <h1 className={`text-4xl font-extrabold text-primary_yellow leading-[116px] lg:text-5xl ${poppinsExtraBold.className}`}>contact.</h1>
-            <div className={`flex flex-col gap-6 md:flex-row`}>
+            <div className={`flex flex-col gap-6 mt-4 md:flex-row`}>
                 <div className={` lg:flex lg:w-1/3`}>
                     <Image
                         src={contactUs}

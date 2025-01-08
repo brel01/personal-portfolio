@@ -5,7 +5,7 @@ export default  function About() {
     return (
         <div className="w-full max-w-sm lg:max-w-screen-lg">
             <h1 className={`text-4xl font-extrabold text-primary_yellow leading-[116px] lg:text-5xl ${poppinsExtraBold.className}`}>about.</h1>
-            <div>
+            <div className={`mt-3`}>
                 <p className="text-md leading-[34px]">
                     {`I am a results-driven data analyst with hands-on experience in leveraging data to deliver actionable insights and drive impactful business decisions. With a strong foundation in analytics and a passion for education and mentorship, I bring a unique blend of technical expertise and visionary leadership to every project.`}
                 </p>
