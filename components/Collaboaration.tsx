@@ -9,7 +9,7 @@ export default function Collaboration() {
         {
             title: "Tech Foundation and Employability",
             image: radiantImage,
-            date: "July 6, 2024",
+            date: "August 2024",
             description: `I partnered with Radiant Pathways Progressive Initiative for the Tech Foundation and Employability Bootcamp 2.0, 
             where I served as a facilitator for the data analytics track. During the program, I provided hands-on training to 20 participants 
             from various professional backgrounds, teaching them how to leverage data for informed decision-making in their careers. 
@@ -20,7 +20,7 @@ export default function Collaboration() {
         {
             title: "Tech Girls' Club",
             image: techClub,
-            date: "July 6, 2024",
+            date: "August 2024",
             description: `I collaborated with Tech Girls' Club to empower senior secondary school students with foundational data analytics skills. 
             Through interactive sessions, I taught them how to collect and organize data using Microsoft Excel, analyze it effectively, 
             and create dashboards to present insights. These dashboards were designed to support decision-making by stakeholders, 
@@ -59,7 +59,7 @@ export default function Collaboration() {
                                         alt={`${item.title} Image`}
                                         className="w-full h-80"
                                     />
-                                    {/*<div className="text-sm italic">{item.date}</div>*/}
+                                    <div className="text-sm italic">{item.date}</div>
                                 </div>
                                 <div className="flex flex-col gap-3">
                                     <h2 className={`${poppinsSemiBold.className}`}>{item.title}</h2>
