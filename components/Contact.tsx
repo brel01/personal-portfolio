@@ -18,9 +18,9 @@ export default  function Contact() {
                     />
                 </div>
                 <div className={` flex flex-col justify-between space-y-6 lg:w-2/3`}>
-                    <div className={`leading-[34px]`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam
-                        felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque,
-                        proin bibendum diam.
+                    <div className={`leading-[34px]`}>{`Let's connect! Whether you're interested in collaborating on impactful projects, inviting me to speak at your event, or simply exploring shared interests in data analytics and tech education, I'd love to hear from you.
+
+Reach out through the social media platforms below or via email, and I'll get back to you promptly. Together, we can create meaningful change`}
                     </div>
                     <div className={`space-y-4`}>
                         <div className="flex gap-3 items-center">

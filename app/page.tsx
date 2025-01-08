@@ -47,6 +47,7 @@ export default function Home() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: aboutInView ? 1 : 0 }}
                     transition={{ duration: 0.8 }}
+                    id={`about`}
                 >
                     <About />
                 </motion.section>
@@ -56,6 +57,7 @@ export default function Home() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: workInView ? 1 : 0 }}
                     transition={{ duration: 0.8 }}
+                    id={`projects`}
                 >
                     <Work />
                 </motion.section>
@@ -65,6 +67,7 @@ export default function Home() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: engagementsInView ? 1 : 0 }}
                     transition={{ duration: 0.8 }}
+                    id={`engagements`}
                 >
                     <Engagements />
                 </motion.section>
@@ -74,6 +77,7 @@ export default function Home() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: collaborationInView ? 1 : 0 }}
                     transition={{ duration: 0.8 }}
+                    id={`collaborations`}
                 >
                     <Collaboaration />
                 </motion.section>
@@ -83,6 +87,7 @@ export default function Home() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: contactInView ? 1 : 0 }}
                     transition={{ duration: 0.8 }}
+                    id={`contact`}
                 >
                     <Contact />
                 </motion.section>
