@@ -1,7 +1,7 @@
 'use client'
 import { useState, useRef, useEffect } from "react";
 import { poppinsSemiBold } from "@/helpers/exportFonts";
-import {Facebook, InstagramIcon, Linkedin, Menu, TwitterIcon, X} from "lucide-react";
+import {Github, Linkedin, Mail, Menu, X} from "lucide-react";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -74,10 +74,10 @@ export default function Navbar() {
                        className={`border-b-[1px] border-b-[#474306] border-dashed py-2 cursor-pointer`} onClick={() => {setIsMenuOpen(false)}}>Contact</a>
 
                     <div className={`flex gap-3 my-2`}>
-                        <a href={'#'} target={'_blank'}> <TwitterIcon/></a>
-                        <a href={'#'} target={'_blank'}><Linkedin/></a>
-                        <a href={'#'} target={'_blank'}><InstagramIcon/></a>
-                        <a href={'#'} target={'_blank'}> <Facebook/></a>
+                        <a href="mailto:diyankanyinsola@gmail.com" className="hover:underline"> <Mail/></a>
+                        <a href={`https://www.linkedin.com/in/kanyinsola-diyan`} target={`_blank`}
+                           rel={`noopener noreferrer`}><Linkedin/></a>
+                        <a href={`https://github.com/mamakay2212`} target={`_blank`} rel={`noopener noreferrer`}> <Github /></a>
                     </div>
                 </div>
             )}
