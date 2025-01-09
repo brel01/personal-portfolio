@@ -25,7 +25,7 @@ Reach out through the social media platforms below or via email, and I'll get ba
                     <div className={`space-y-4`}>
                         <div className="flex gap-3 items-center">
                             <Mail/>
-                            <a href="mailto:diyankanyinsola@gmail.com" className="hover:underline text-blue-600">
+                            <a href="mailto:diyankanyinsola@gmail.com" className="hover:underline">
                                 diyankanyinsola@gmail.com
                             </a>
                         </div>
@@ -33,13 +33,13 @@ Reach out through the social media platforms below or via email, and I'll get ba
                         <div className={`flex gap-3 items-center`}>
                             <Linkedin/>
                             <a href={`https://www.linkedin.com/in/kanyinsola-diyan`} target={`_blank`}
-                               rel={`noopener noreferrer`}>
+                               rel={`noopener noreferrer`} className="hover:underline">
                                 Kanyinsola Diyan
                             </a>
                         </div>
                         <div className={`flex gap-3 items-center`}>
                             <Github />
-                            <a href={`https://github.com/mamakay2212`} target={`_blank`} rel={`noopener noreferrer`}>mamakay2212</a>
+                            <a href={`https://github.com/mamakay2212`} target={`_blank`} rel={`noopener noreferrer`} className="hover:underline">mamakay2212</a>
                         </div>
                     </div>
                 </div>
